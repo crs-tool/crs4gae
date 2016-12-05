@@ -21,14 +21,14 @@
     <developer>
       <name>Marcos Borges</name>
       <email>borges.marcos1@gmail.com</email>
-      <organization>Ceará State University</organization>
+      <organization>Ceara State University</organization>
       <organizationUrl>http://www.uece.br/</organizationUrl>
     </developer>
     
     <developer>
       <name>Erick Barros</name>
       <email>erick.barros@aluno.uece.br</email>
-      <organization>Ceará State University</organization>
+      <organization>Ceara State University</organization>
       <organizationUrl>http://www.uece.br/</organizationUrl>
     </developer>
   </developers>
@@ -38,5 +38,17 @@
   	<developerConnection>scm:git:git@github.com:crs-tool/crs4gae.git</developerConnection>
   	<url>http://git@github.com:crs-tool/crs4gae.git</url>
   </scm>
+  
+  <properties>
+  	<appengine.sdk.version>1.9.38</appengine.sdk.version>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+		<groupId>com.google.appengine</groupId>
+		<artifactId>appengine-api-1.0-sdk</artifactId>
+		<version>${appengine.sdk.version}</version>
+	</dependency>
+  </dependencies>
   
 </project>

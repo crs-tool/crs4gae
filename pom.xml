@@ -3,7 +3,7 @@
   
 	<groupId>com.github.crs-tool</groupId>
 	<artifactId>crs4gae</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
   
 	<name>CRS4GAE</name>
@@ -32,6 +32,17 @@
       		<organizationUrl>http://www.uece.br/</organizationUrl>
     	</developer>
   	</developers>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+	</distributionManagement>
   
   	<scm>
   		<connection>scm:git:git@github.com:crs-tool/crs4gae.git</connection>
@@ -120,20 +131,9 @@
           					</goals>
         			</execution>
       			</executions>
-    		</plugin>
-    		<plugin>
-      			<groupId>org.apache.maven.plugins</groupId>
-      			<artifactId>maven-gpg-plugin</artifactId>
-      			<version>1.5</version>
-      			<executions>
-        			<execution>
-          				<id>sign-artifacts</id>
-          				<phase>verify</phase>
-          				<goals>
-            				<goal>sign</goal>
-          				</goals>
-        			</execution>
-      			</executions>
+				<configuration>
+				      <additionalparam>-Xdoclint:none</additionalparam>
+			    </configuration>
     		</plugin>
   		</plugins>
 	</build>

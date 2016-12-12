@@ -1,4 +1,4 @@
-package br.uece.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.util.concurrent.ThreadFactory;
 import com.google.appengine.api.ThreadManager;

@@ -1,4 +1,4 @@
-package br.uece.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

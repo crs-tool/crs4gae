@@ -3,7 +3,7 @@
   
 	<groupId>com.github.crs-tool</groupId>
 	<artifactId>crs4gae</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
   
 	<name>CRS4GAE</name>

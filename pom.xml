@@ -3,11 +3,11 @@
   
 	<groupId>com.github.crs-tool</groupId>
 	<artifactId>crs4gae</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<packaging>jar</packaging>
   
 	<name>CRS4GAE</name>
-  	<description>A collection of example classes to be used in the CRSRefactor Tool</description>
+  	<description>A collection of example classes to be used in the CRSRefactor Tool.</description>
   	<url>https://github.com/crs-tool/crs4gae</url>
   
   	<licenses>

@@ -1,35 +1,33 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.util.concurrent.ThreadFactory;
 
 import com.google.appengine.api.ThreadManager;
 
+/**
+* CRS4GAEThread.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRS4GAEThread extends CRSThread {
-
-	/**
-	 * Auxiliary Variable for Thread execution
-	 */
 	public Thread thread;
-	
-	/**
-	 * Auxiliary Variable for ThreadFactory
-	 */
+
 	public ThreadFactory factory = null;
-	
-	
+
+
 	/**
 	 * Prepare a thread instance in the runtime environment of the Google App
 	 * Engine.
-	 * 
+	 *
 	 * @parameter A instance of a Runnable class.
 	 */
 	public CRS4GAEThread(Runnable run) {
 		this.thread = this.getThreadFactoryCloud().newThread(run);
 	}
-	
+
 	/**
 	 * Retrieve the ThreadFactory instance used in this class.
-	 * 
+	 *
 	 * @return A instance of the ThreadFactory class.
 	 */
 	public ThreadFactory getFactory() {
@@ -38,7 +36,7 @@ public class CRS4GAEThread extends CRSThread {
 
 	/**
 	 * Update the ThreadFactory instance used in this class.
-	 * 
+	 *
 	 * @return A instance of the ThreadFactory class.
 	 */
 	public void setFactory(ThreadFactory factory) {
@@ -48,23 +46,15 @@ public class CRS4GAEThread extends CRSThread {
 	/**
 	 * Retrieve a ThreadFactory instance from the runtime environment of the
 	 * Google App Engine.
-	 * 
+	 *
 	 * @return A instance of the ThreadFactory class.
 	 */
 	public ThreadFactory getThreadFactoryCloud() {
 		setFactory(ThreadManager.currentRequestThreadFactory());
 		return getFactory();
 	}
-	
-	/**
-	 * Execute a runnable instance in the runtime environment of the Google App
-	 * Engine.
-	 * 
-	 * @return The instance of the Thread class executed in the runtime
-	 *         environment of the Google App Engine.
-	 */
-	
-	
+
+
 	@Override
 	public void start() {
 		thread.start();

@@ -1,4 +1,4 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +15,11 @@ import com.google.appengine.tools.cloudstorage.ListOptions;
 import com.google.appengine.tools.cloudstorage.ListResult;
 import com.google.appengine.tools.cloudstorage.RetryParams;
 
+/**
+* CRS4GAEFile.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRS4GAEFile extends CRSFile {
 
 	private static final boolean LOCAL_SERVER = false;

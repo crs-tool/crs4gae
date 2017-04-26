@@ -1,10 +1,15 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.Writer;
 import java.nio.channels.Channels;
 
+/**
+* CRS4GAEFileWriter.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRS4GAEFileWriter extends CRSFileWriter {
 
 	private Writer writer;

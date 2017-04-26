@@ -1,4 +1,4 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -27,6 +27,11 @@ import com.google.appengine.tools.cloudstorage.ListOptions;
 import com.google.appengine.tools.cloudstorage.ListResult;
 import com.google.appengine.tools.cloudstorage.RetryParams;
 
+/**
+* CRS4GAEWritingFiles.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRS4GAEWritingFiles {
 
 	private static final boolean LOCAL_SERVER = false;
@@ -150,15 +155,15 @@ public class CRS4GAEWritingFiles {
 	public static Writer writerChannel(GcsFilename fileName, String codification) {
 		return Channels.newWriter(CRS4GAEWritingFiles.create(fileName), codification);
 	}
-	
+
 	public static OutputStream ouputStreamChannel(GcsFilename fileName) {
 		return Channels.newOutputStream(CRS4GAEWritingFiles.create(fileName));
 	}
-	
+
 	public static InputStream inputStreamChannel(GcsFilename fileName) {
 		return Channels.newInputStream(CRS4GAEWritingFiles.read(fileName));
 	}
-	
+
 	public static Reader readerChannel(GcsFilename fileName) {
 		return CRS4GAEWritingFiles.readerChannel(fileName, "UTF8");
 	}

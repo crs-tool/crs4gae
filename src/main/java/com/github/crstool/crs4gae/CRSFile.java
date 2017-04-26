@@ -1,5 +1,10 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
+/**
+* CRSFile.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public abstract class CRSFile {
 	public abstract String getPath();
 	public abstract boolean exists();

@@ -1,5 +1,10 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
+/**
+* CRS4Thread.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public abstract class CRSThread {
 	public abstract void start();
 	public abstract void stop();

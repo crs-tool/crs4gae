@@ -1,7 +1,12 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.FilenameFilter;
 
+/**
+* CRSAuxiliary.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRSAuxiliary {
 
 	public static String getRegexPattern(FilenameFilter filter) {
@@ -21,6 +26,6 @@ public class CRSAuxiliary {
 		}
 		return regex;
 	}
-	
-	
+
+
 }

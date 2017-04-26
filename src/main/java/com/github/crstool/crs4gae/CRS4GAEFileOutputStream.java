@@ -1,4 +1,4 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -6,9 +6,15 @@ import java.io.OutputStream;
 import java.nio.channels.Channels;
 import java.nio.channels.WritableByteChannel;
 
+/**
+* CRS4GAEFileOutputStream.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 public class CRS4GAEFileOutputStream extends CRSFileOutputStream {
 
 	private OutputStream outputStream;
+
 
 	public CRS4GAEFileOutputStream(CRS4GAEFile file) {
 		outputStream = Channels.newOutputStream(file.create());
@@ -17,6 +23,10 @@ public class CRS4GAEFileOutputStream extends CRSFileOutputStream {
 		outputStream = Channels.newOutputStream(new CRS4GAEFile(pathName).create());
 	}
 
+	/**
+	* Javadoc under construction.
+	* @return There is no return.
+	*/
 	public void close() {
 		try {
 			outputStream.close();
@@ -25,11 +35,11 @@ public class CRS4GAEFileOutputStream extends CRSFileOutputStream {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public WritableByteChannel getChannel() {
 			return Channels.newChannel(outputStream);
 	}
-	
+
 	@Override
 	public void write(int b) {
 		try {
@@ -59,5 +69,5 @@ public class CRS4GAEFileOutputStream extends CRSFileOutputStream {
 			e.printStackTrace();
 		}
 	}
-	
+
 }

@@ -1,4 +1,4 @@
-package com.crs4gae;
+package com.github.crstool.crs4gae;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -6,6 +6,12 @@ import java.io.Reader;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.WritableByteChannel;
+
+/**
+* CRS4GAEAuxiliary.java - Javadoc under construction.
+* @author Marcos Borges
+* @version 1.0
+*/
 
 public class CRS4GAEAuxiliary {
 
@@ -20,9 +26,9 @@ public class CRS4GAEAuxiliary {
 	public static Reader reader(CRS4GAEFile fileName, String codification) {
 		return Channels.newReader(fileName.read(), codification);
 	}
-	
+
 	public static FileChannel getChannel(FileInputStream input) {
 		return input.getChannel();
 	}
-	
+
 }
